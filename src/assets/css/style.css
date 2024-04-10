@@ -3,29 +3,143 @@
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-image: url('../img/Knot_board.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -100;
+    backdrop-filter: 10px;
+}
+
+.bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    /* Enviar al fondo */
 }
 
 body {
-  margin: 0;
-  display: flex;
-  min-width: 320px;
-  min-height: 100vh;
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    scroll-behavior: smooth;
 }
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
+
+@layer components {
+
+    /* ? BUTTON COMPONENTS */
+    .btn {
+        @apply px-4 py-2 text-sm text-center text-nowrap font-bold uppercase rounded cursor-pointer
+    }
+
+    .btn-default {
+        @apply bg-default/10 text-default hover:bg-default/20
+    }
+
+    .btn-primary {
+        @apply bg-primary/10 text-primary hover:bg-primary/20
+    }
+
+    .btn-secondary {
+        @apply bg-secondary/10 text-secondary hover:bg-secondary/20
+    }
+
+    .btn-success {
+        @apply bg-success/10 text-success hover:bg-success/20
+    }
+
+    .btn-warning {
+        @apply bg-warning/10 text-warning hover:bg-warning/20
+    }
+
+    .btn-error {
+        @apply bg-error/10 text-error hover:bg-error/20
+    }
+
+    .btn-info {
+        @apply bg-info/10 text-info hover:bg-info/20
+    }
+
+    .btn-outlined-default {
+        @apply text-primary border border-primary hover:bg-primary/10
+    }
+
+    .btn-outlined-primary {
+        @apply text-primary border border-primary hover:bg-primary/10
+    }
+
+    .btn-outlined-secondary {
+        @apply text-secondary border border-secondary hover:bg-secondary/10
+    }
+
+    .btn-outlined-success {
+        @apply text-success border border-success hover:bg-success/10
+    }
+
+    .btn-outlined-warning {
+        @apply text-warning border border-warning hover:bg-warning/10
+    }
+
+    .btn-outlined-error {
+        @apply text-error border border-error hover:bg-error/10
+    }
+
+    .btn-outlined-info {
+        @apply text-info border border-info hover:bg-info/10
+    }
+
+    /* ? NAVBAR COLLAPSE BUTTON */
+    .hover\:rotate-childs:hover .rotate-child-y {
+        transform: rotateY(180deg);
+    }
+
+    .hover\:rotate-childs .rotate-child-3d-1 {
+        transform: rotate3d(0, 0, 1, 45deg);
+        position: absolute;
+    }
+
+    .hover\:rotate-childs .rotate-child-3d-3 {
+        transform: rotate3d(0, 0, 1, -45deg);
+        position: absolute;
+    }
+
+    .hover\:rotate-childs:hover .rotate-child-3d-1 {
+        transform: rotate3d(0, 0, 1, 20deg);
+    }
+
+    .hover\:rotate-childs:hover .rotate-child-3d-3 {
+        transform: rotate3d(0, 0, 1, -20deg);
+    }
+
+    .text-shadow {
+        text-shadow: 0 0 5px rgb(156, 39, 176), 0 0 15px rgb(156, 39, 176);
+    }
+
+    /* ? TRANSITIONS AND ANIMATIONS */
+    .transition-props {
+        @apply opacity-0 transition duration-[1.5s]
+    }
+
+    /* slide */
+    .transition-slide-0 {
+        @apply opacity-100 translate-x-0
+    }
+
+    /* scale */
+    .transition-scale-100 {
+        @apply opacity-100 scale-100
+    }
+
 }

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "img": "Login.png",
+        "title": "Inventory System",
+        "description": "El sistema de inventario ofrece una solución integral para gestionar eficientemente los activos del almacén de una empresa u organización. Con un enfoque centrado en la facilidad de uso y la precisión, el sistema permite registrar y monitorear las entradas, salidas y préstamos de bienes de forma rápida y efectiva. \n\n Desde la recepción de nuevos bienes hasta la entrega a los solicitantes, el sistema te brinda la capacidad de realizar un seguimiento detallado de cada movimiento de inventario del almacén. Además, ofrece funciones avanzadas de generación de informes y análisis para ayudarte a tomar decisiones informadas sobre la gestión de los activos y optimizar la gestión de tus recursos.",
+        "resume": "Un sistema de inventario que ofrece una solución integral para gestionar eficientemente los activos del almacén de una organización.",
+        "technologies": [ "Vue", "Vuetify", "Node.js", "MySQL" ]
+    },
+    {
+        "id": 2,
+        "img": "IPControl.png",
+        "title": "Ip Control",
+        "description": "El sistema de control de IPs ofrece una solución completa y fácil de usar para gestionar los equipos de una empresa por áreas específicas. Con una interfaz intuitiva y eficiente, puedes asignar y administrar direcciones IP de manera rápida y precisa, asegurando una gestión ordenada y eficiente de la red.\n\n Puedes organizar tus equipos en áreas específicas, asignando rangos de direcciones IP de acuerdo a tus necesidades. Esto permite mantener un control detallado de todos los dispositivos conectados a tu red y garantizar una distribución equitativa de recursos.\n\nAdemás, el sistema simplifica la gestión de direcciones IP mediante funciones avanzadas como la detección automática de conflictos de direcciones y la generación de informes detallados sobre el uso de la red y proporcionarte las herramientas necesarias para mantener tu red segura y eficiente.",
+        "resume": "Un sistema de control de IPs eficiente y fácil de usar, diseñado para gestionar los equipos de tu empresa por áreas específicas y administrar direcciones IP de manera rápida y precisa.",
+        "technologies": [ "Html", "Css", "JavaScript", "Bootstrap", "JQuery", "Php", "MySQL" ]
+    },
+    {
+        "id": 3,
+        "img": "StudentControl.png",
+        "title": "Student Control",
+        "description": "El sistema de control de estudiantes es una solución integral diseñada para simplificar y mejorar la gestión en los niveles iniciales de la educación. Con una interfaz fácil de usar, el sistema proporciona una plataforma robusta para registrar, organizar y administrar información vital sobre estudiantes, representantes y docentes.\n\nAdemás, el sistema facilita la gestión de representantes legales y docentes, permitiéndote mantener registros actualizados y precisos sobre las personas involucradas en la educación de los estudiantes. Puedes asignar representantes a estudiantes, asociar docentes con clases y realizar un seguimiento de la información relevante para cada uno.\n\nUna de las características destacadas de nuestro sistema es su capacidad para organizar la información por grados y secciones. Esto te permite mantener una estructura clara y organizada para tus estudiantes, agrupándolos por nivel educativo y clase, lo que facilita la gestión y el acceso a la información, brindando a las instituciones educativas las herramientas necesarias para tener un control eficiente sobre su información estudiantil.",
+        "resume": "Un sistema de control de estudiantes diseñado para simplificar la gestión estudiantes en el nivel inicial.",
+        "technologies": [ "Java", "MySQL" ]
+    }
+]
