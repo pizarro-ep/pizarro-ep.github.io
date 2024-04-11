@@ -33,7 +33,7 @@
                 . Todos los derechos reservados.
             </span>
             <br>
-            <a href="credits"
+            <a href="/#/credits"
                 class="relative text-2xs text-black/75 dark:text-white/75 hover:text-primary transition-all duration-500 before:content-[''] before:w-0 before:absolute before:transition-all before:duration-500 before:opacity-0 before:-mb-1 before:left-0 before:bottom-0 before:border-b-2 before:border-primary before:rounded hover:before:opacity-80 hover:before:w-full hover:tracking-wide">Créditos
                 de la web</a>
         </div>
