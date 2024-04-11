@@ -21,10 +21,10 @@
                 {{ description }}
             </span>
             <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-3 mt-3">
-                <a href="about" class="btn btn-outlined-primary rounded-full">
+                <a href="/#/about" class="btn btn-outlined-primary rounded-full">
                     Acerca de mí
                 </a>
-                <a href="/projects" class="btn btn-primary rounded-full">
+                <a href="/#/projects" class="btn btn-primary rounded-full">
                     Proyectos <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i>
                 </a>
             </div>
