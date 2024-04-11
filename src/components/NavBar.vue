@@ -89,9 +89,9 @@ export default {
         getMenu() {
             return [
                 { title: "Inicio", icon: "fa fa-home", href: "/" },
-                { title: "Sobre mí", icon: "fa fa-address-card", href: "about" },
-                { title: "Proyectos", icon: "fa fa-folder-open", href: "projects" },
-                { title: "Contacto", icon: "fa fa-address-book", href: "" },
+                { title: "Sobre mí", icon: "fa fa-address-card", href: "/#/about" },
+                { title: "Proyectos", icon: "fa fa-folder-open", href: "/#/projects" },
+                { title: "Contacto", icon: "fa fa-address-book", href: "/#/contact" },
             ]
         },
         setTheme() {
