@@ -1,41 +1,31 @@
 <template>
     <div class="w-full min-h-screen flex flex-col justify-center items-center gap-10 px-5 md:px-10 lg:px-16 pt-10 md:pt-0
         overflow-hidden">
-        <div class="flex flex-col items-center gap-3 transition-props transition-up scale-50">
-            <span class="text-black/90 dark:text-white/90 text-center text-3xl font-bold uppercase">
-                Contácteme
+        <div class="flex flex-col items-center gap-5 transition-props transition-up scale-50">
+            <span class="text-black/90 dark:text-white/90 text-center text-3xl font-bold uppercase select-none">
+                Créditos
             </span>
             <span class="w-10 h-1.5 bg-default rounded"></span>
-            <span class="max-w-3xl text-secondary text-center font-medium mt-5">
-                No dude en ponerse en contacto conmigo, escríbame al siguiene correo, me pondré en contacto con usted lo
-                antes posible.
-            </span>
-        </div>
-        <div class="flex gap-3 items-center transition-props transition-up scale-50">
-            <div class="relative p-0">
-                <input type="text" :value="email" readonly
-                    class="pl-4 pr-8 py-2 bg-surface-light dark:bg-surface-dark text-secondary font-semibold outline-0 border-2 border-surface-light dark:border-surface-dark focus:border-primary rounded-md">
-                <span v-if="!copied" class="absolute right-4 top-2.5">
-                    <i title="Copiar"
-                        class="fa-regular fa-clipboard text-black/50 dark:text-white/50 hover:text-primary cursor-pointer"
-                        @click="copyEmail"></i>
-                </span>
-                <span v-else class="absolute right-4 top-3">
-                    <i title="Copiado" class="fa-solid fa-check text-success cursor-pointer"></i>
-                </span>
+            <div class="flex flex-col items-center gap-2 pt-5">
+                <div class="flex flex-col items-center gap-3">
+                    <span class="text-primary select-none">Elaboración del sitio web</span>
+                    <span class="text-secondary font-bold select-none">Eusebio Pizarro</span>
+                </div>
+                <div class="flex flex-col items-center gap-2 pt-3">
+                    <span class="text-primary select-none">Íconos e imágenes</span>
+                    <a href="https://fontawesome.com/" class="underline text-secondary hover:text-primary/50"
+                        target="blank">
+                        Fontawesome
+                        <span class="italic">https://fontawesome.com/</span>
+                        <i class="fa-solid fa-up-right-from-square ms-2"></i>
+                    </a>
+                </div>
             </div>
-            <a :href="`mailto:${email}`" class="btn btn-warning text-lg"><i class="fa-solid fa-envelope"></i></a>
         </div>
     </div>
 </template>
 <script>
 export default {
-    data() {
-        return {
-            email: "pizarroe022@gmail.com",
-            copied: false,
-        }
-    },
     mounted() {
         window.addEventListener("scroll", this.handleScroll);
         this.handleScroll()
@@ -44,20 +34,6 @@ export default {
         window.removeEventListener("scroll", this.handleScroll);
     },
     methods: {
-        copyEmail: function () {
-            const input = document.createElement('input');
-            input.style.position = 'fixed';
-            input.style.opacity = 0;
-            input.value = this.email;
-            document.body.appendChild(input);
-            input.select();
-            document.execCommand('copy');
-            document.body.removeChild(input);
-            this.copied = true;
-            setTimeout(() => {
-                this.copied = false;
-            }, 3000);
-        },
         handleScroll() {
             this.applyAnimation("transition-up", "scale-50", "transition-scale-100");
         },

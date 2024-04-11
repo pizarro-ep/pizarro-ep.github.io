@@ -34,7 +34,6 @@ export default {
             { name: "Php@logo.svg", alt: "Php" },
             { name: "Vue@logo.svg", alt: "Vue" },
             { name: "Vuetify@logo.svg", alt: "Vuetify" },
-
         ]
 
         const getImageUrl = (name) => {

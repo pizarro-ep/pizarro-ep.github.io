@@ -1,24 +1,33 @@
 <template>
-    <div class="w-full min-h-screen flex flex-col justify-center items-center gap-10 px-5 md:px-10 lg:px-16 pt-10 md:pt-0
-        overflow-hidden">
-        <div class="flex flex-col items-center gap-3 transition-props transition-up scale-50">
-            <span class="text-black/90 dark:text-white/90 text-center text-3xl font-bold uppercase">
-                ¿Qué puedo hacer?
-            </span>
+    <div
+        class="w-full min-h-screen flex flex-col justify-center items-center gap-10 px-5 md:px-10 lg:px-16 pt-20 sm:pt-10 md:pt-0 overflow-hidden">
+        <div
+            class="flex flex-col items-center gap-5 p-1 text-4xl text-black/75 dark:text-white/75 text-center font-bold transition-props transition-up scale-50">
+            ¿QUE PUEDO HACER?
             <span class="w-10 h-1.5 bg-default rounded"></span>
-            <span class="max-w-3xl text-secondary text-center font-medium mt-5">
-                En la actualidad, me dedico al diseño y el desarrollo de sitios de aplicaciones web y de escritorio,
-                tanto en el lado del cliente como en el del servidor.
-                Me mantengo constantemente actualizado, adquiriendo nuevos conocimientos en función de las demandas y
-                tendencias tecnológicas del mercado actual y futuro en el campo del diseño, desarrollo de aplicaciones
-                web y de escritorio en general.
-                Me siento muy motivado por mi trabajo, ya que puedo aportar mis conocimientos, habilidades, ofrecer
-                nuevas ideas, soluciones personalizadas, y asegurarme de que se cumplan los estándares de calidad en
-                cada proyecto que realizo, ayudando así a los clientes a lograr sus objetivos.
+        </div>
+        <div class="flex flex-col gap-3">
+            <span
+                class="max-w-4xl text-center text-secondary font-medium select-none transition-props transition-up scale-50">
+                En la actualidad me dedico al diseño y el desarrollo de sitios web y de escritorio tanto del lado del
+                cliente como del servidor.
+            </span>
+            <span
+                class="max-w-4xl text-center text-secondary font-medium select-none transition-props transition-up scale-50">
+                Me mantengo constantemente actualizado adquieriendo nuevos conocimientos en función de las demandas y
+                tendencias tecnológicas del mercado actual y del futuro.
+            </span>
+            <span
+                class="max-w-4xl text-center text-secondary font-medium select-none transition-props transition-up scale-50">
+                Me siento muy motivado por trabajo, ya que puedo aportar mis conocimientos, habilidas, ofrecer nuevas
+                ideas
+                soluciones personalizadas y asegurarme de que se cumplan los estándares de calidad en cada proyecto que
+                realizo, ayudando así a los clientes a lograr sus objetivos.
             </span>
         </div>
     </div>
-    <div class="w-full min-h-screen flex flex-col justify-center items-center gap-5 py-3 px-10 overflow-hidden">
+    <div
+        class="w-full min-h-screen flex flex-col justify-center items-center gap-10 px-5 md:px-10 lg:px-16 pt-10 md:pt-0 overflow-hidden">
         <div
             class="flex flex-col items-center gap-5 p-1 text-4xl text-black/75 dark:text-white/75 font-bold transition-props transition-up scale-50">
             HABILIDADES
@@ -56,6 +65,8 @@
     </div>
 </template>
 <script>
+import skylls from "../data/skylls.json"
+
 export default {
     data() {
         return {
@@ -85,6 +96,9 @@ export default {
             setTimeout(() => {
                 this.copied = false;
             }, 3000);
+        },
+        getImageUrl: function (name) {
+            return new URL(`../assets/img/logos/${name}`, import.meta.url).href
         },
         handleScroll() {
             this.applyAnimation("transition-up", "scale-50", "transition-scale-100");

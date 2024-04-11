@@ -21,10 +21,10 @@
                 {{ description }}
             </span>
             <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-3 mt-3">
-                <a href="about" class="btn btn-outlined-primary rounded-full">
+                <a href="/#/about" class="btn btn-outlined-primary rounded-full">
                     Acerca de mí
                 </a>
-                <a href="/projects" class="btn btn-primary rounded-full">
+                <a href="/#/projects" class="btn btn-primary rounded-full">
                     Proyectos <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i>
                 </a>
             </div>
@@ -74,6 +74,7 @@
 
 <script>
 import imageZero from "../assets/img/Developer_Zero.png";
+import skylls from "../data/skylls.json"
 
 export default {
     name: "HomeView",
@@ -82,44 +83,7 @@ export default {
             name: "Eusebio Pizarro",
             know: ["Frontend Developer", "Backend Developer"],
             description: "Soy desarrollador, que disfruta creando soluciones digitales, resolviendo problemas y diseñando experiencias únicas para los usuarios.",
-            skylls: [
-                {
-                    title: "Frontend",
-                    color: "bg-primary/20 text-primary",
-                    data: [
-                        { name: "Html@logo.svg", alt: "Html" },
-                        { name: "Css@logo.svg", alt: "Css" },
-                        { name: "JavaScript@logo.svg", alt: "JavaScript" },
-                        { name: "Vue@logo.svg", alt: "Vue" },
-                        { name: "Vuetify@logo.svg", alt: "Vuetify" },
-                        { name: "Tailwindcss@logo.svg", alt: "Tailwind" },
-                        { name: "Bootstrap@logo.svg", alt: "Bootstrap" },
-                    ]
-                },
-                {
-                    title: "Backend",
-                    color: "bg-success/20 text-success",
-                    data: [
-                        { name: "Php@logo.svg", alt: "Php" },
-                        { name: "Node@logo.svg", alt: "Node" },
-                    ]
-                },
-                {
-                    title: "Lenguajes de programación",
-                    color: "bg-warning/20 text-warning",
-                    data: [
-                        { name: "Java@logo.svg", alt: "Java" },
-                        { name: "Python@logo.svg", alt: "Python" },
-                    ]
-                },
-                {
-                    title: "Base de datos",
-                    color: "bg-error/20 text-error",
-                    data: [
-                        { name: "MySQL@logo.svg", alt: "MySQL" },
-                    ]
-                },
-            ],
+            skylls: skylls
         }
     },
     mounted() {

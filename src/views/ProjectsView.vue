@@ -13,7 +13,7 @@
                 class="w-full md:w-1/2 lg:w-1/3 flex flex-col gap-5 text-secondary select-none transition-props transition-to-l translate-x-full">
                 <span class="text-black dark:text-white text-xl font-bold uppercase">{{ project.title }}</span>
                 <span class="">{{ project.resume }}</span>
-                <div><a :href="`projects/${project.id}`" class="btn btn-default py-2">Caso de estudio <i
+                <div><a :href="`/#/projects/${project.id}`" class="btn btn-default py-2">Caso de estudio <i
                             class="fa-solid fa-arrow-up-right-from-square ms-2"></i></a></div>
             </div>
         </div>
