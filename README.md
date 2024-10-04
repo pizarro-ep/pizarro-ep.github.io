@@ -1,7 +1,21 @@
-# Vue 3 + Vite
+# Mi Portafolio Personal
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Este es mi portafolio personal desarrollado con [Vue.js](https://vuejs.org/) y [Vite](https://vitejs.dev/), y está desplegado en [GitHub Pages](https://pizarro-ep.github.io/).
 
-## Recommended IDE Setup
+## Vista Previa
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+Puedes ver el portafolio en vivo [aquí](https://github.com/pizarro-ep/pizarro-ep.github.io/).
+
+## Características
+
+- Proyecto desarrollado con Vue 3 y Vite para un rendimiento rápido.
+- Diseño moderno y minimalista.
+- Totalmente responsivo y adaptable a dispositivos móviles.
+- Secciones para inicio, proyectos, sobre mí, y contacto.
+- Desplegado en GitHub.
+
+## Tecnologías Utilizadas
+
+- [Vue.js](https://vuejs.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
